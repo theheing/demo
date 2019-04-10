@@ -18,6 +18,7 @@ using Automate.Utilities;
 public partial class Report : System.Web.UI.Page
 {
     ReportDocument cryRpt = new ReportDocument();
+	string test = string.empty;
     protected void Page_Init(object sender, EventArgs e)
     {
         showreport();
