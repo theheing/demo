@@ -18,10 +18,10 @@ namespace Automate.Utilities
     {
         private static IFormatProvider enCulture = new CultureInfo("en-US");
         private static IFormatProvider thCulture = new CultureInfo("th-TH");
-        //private string reportServer = ConfigurationManager.AppSettings["ReportServer"];
-        //private string reportDatabase = ConfigurationManager.AppSettings["ReportDatabase"];
-        //private string reportUserName = ConfigurationManager.AppSettings["ReportUserName"];
-        //private string reportPassword = ConfigurationManager.AppSettings["ReportPassword"];
+        ////private string reportServer = ConfigurationManager.AppSettings["ReportServer"];
+        ////private string reportDatabase = ConfigurationManager.AppSettings["ReportDatabase"];
+        ////private string reportUserName = ConfigurationManager.AppSettings["ReportUserName"];
+        ////private string reportPassword = ConfigurationManager.AppSettings["ReportPassword"];
 
 
         public static IFormatProvider ENCulture
@@ -51,27 +51,27 @@ namespace Automate.Utilities
 
         public static bool SendHTMLMail(MailMessage msg)
         {
-            //Configuration configurationFile = WebConfigurationManager.OpenWebConfiguration(HttpContext.Current.Server.MapPath("~/web.config"));
-            //Configuration configurationFile = WebConfigurationManager.OpenWebConfiguration(HttpContext.Current.Server.MapPath("~/web.config"));
-            //MailSettingsSectionGroup mailSettings = configurationFile.GetSectionGroup("system.net/mailSettings") as MailSettingsSectionGroup;
+            ////Configuration configurationFile = WebConfigurationManager.OpenWebConfiguration(HttpContext.Current.Server.MapPath("~/web.config"));
+            ////Configuration configurationFile = WebConfigurationManager.OpenWebConfiguration(HttpContext.Current.Server.MapPath("~/web.config"));
+            ////MailSettingsSectionGroup mailSettings = configurationFile.GetSectionGroup("system.net/mailSettings") as MailSettingsSectionGroup;
 
-            //if (mailSettings != null)
-            //{
-            //    try
-            //    {
-            //        SmtpClient smtp = new SmtpClient();
-            //        smtp.Host = mailSettings.Smtp.Network.Host;
-            //        smtp.Port = mailSettings.Smtp.Network.Port;
-            //        smtp.Credentials = new System.Net.NetworkCredential(mailSettings.Smtp.Network.UserName
-            //                                                           , mailSettings.Smtp.Network.Password);
-            //        smtp.EnableSsl = false;
-            //        smtp.Send(msg);
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        throw new Exception("Error Infomation ", ex);
-            //    }
-            //}
+            ////if (mailSettings != null)
+            ////{
+            ////    try
+            ////    {
+            ////        SmtpClient smtp = new SmtpClient();
+            ////        smtp.Host = mailSettings.Smtp.Network.Host;
+            ////        smtp.Port = mailSettings.Smtp.Network.Port;
+            ////        smtp.Credentials = new System.Net.NetworkCredential(mailSettings.Smtp.Network.UserName
+            ////                                                           , mailSettings.Smtp.Network.Password);
+            ////        smtp.EnableSsl = false;
+            ////        smtp.Send(msg);
+            ////    }
+            ////    catch (Exception ex)
+            ////    {
+            ////        throw new Exception("Error Infomation ", ex);
+            ////    }
+            ////}
 
             bool success = false;
             System.Net.ServicePointManager.ServerCertificateValidationCallback =
